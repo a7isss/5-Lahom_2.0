@@ -12,7 +12,7 @@ const Navbar = () => {
         <div className='flex h-14 items-center justify-between border-b border-zinc-200'>
           <Link href='/' className='flex z-40 font-semibold items-center justify-center gap-x-2 rounded-md'>
             <div className='h-5 w-5 bg-black'></div>
-            <span>INFLUENZAR</span>
+            <span>Lahom</span>
           </Link>
 
           <div className="hidden items-center space-x-4 sm:flex">
