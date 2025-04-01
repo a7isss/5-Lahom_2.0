@@ -1,10 +1,27 @@
 import mongoose from "mongoose";
 
-const connectDB = handler => async (req, res) => {
-    if (mongoose.connections[0].readyState) {
-        return handler(req, res);
+// MongoDB connection URI (replace with your actual URI)
+const MONGO_URI = process.env.MONGODB_URI || "WWW.GOOGLE.COM";
+
+// Establish connection
+const connectToDatabase = async () => {
+    if (mongoose.connection.readyState === 1) {
+        // Connection is already established, reuse it
+        console.log("Mongoose is already connected to the database.");
+        return;
     }
-    await mongoose.connect(process.env.MONGODB_URI);
-    return handler(req, res);
-}
-export default connectDB;
+
+    try {
+        await mongoose.connect(MONGO_URI, {
+            useNewUrlParser: true,
+            useUnifiedTopology: true,
+        });
+        console.log("Connected to MongoDB successfully");
+    } catch (err) {
+        console.error("Error connecting to MongoDB:", err);
+        process.exit(1); // Exit the process on a failure
+    }
+};
+
+// Export the connection function
+export default connectToDatabase;
