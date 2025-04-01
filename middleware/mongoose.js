@@ -4,7 +4,7 @@ import mongoose from "mongoose";
 const MONGO_URI = process.env.MONGODB_URI || "WWW.GOOGLE.COM";
 
 // Establish connection
-const connectToDatabase = async () => {
+const connectDB = async () => {
     if (mongoose.connection.readyState === 1) {
         // Connection is already established, reuse it
         console.log("Mongoose is already connected to the database.");
@@ -24,4 +24,4 @@ const connectToDatabase = async () => {
 };
 
 // Export the connection function
-export default connectToDatabase;
+export default connectDB;
