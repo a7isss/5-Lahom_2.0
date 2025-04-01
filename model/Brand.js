@@ -11,6 +11,5 @@ const BrandSchema = new mongoose.Schema({
     rating:{type:Number,default:0},
     reviews:{type:Array,default:[]},
 }, { timestamps: true });
-mongoose.models = {};
 
-export default mongoose.model('Brand', BrandSchema);
+export default mongoose.models.Brand || mongoose.model('Brand', BrandSchema);

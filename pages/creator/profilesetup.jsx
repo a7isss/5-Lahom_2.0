@@ -57,7 +57,7 @@ console.log(userinfo)
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          "Authorization": `Basic ${btoa("junaid:2002")}`,
+          "Authorization": `Basic ${btoa("5c7a5c961a:879bfd9e0ea")}`,
         },
         body: JSON.stringify({ email: user.email }),
       })
@@ -73,7 +73,7 @@ console.log(userinfo)
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        "Authorization": `Basic ${btoa("junaid:2002")}`,
+        "Authorization": `Basic ${btoa("5c7a5c961a:879bfd9e0ea")}`,
       },
       body: JSON.stringify({
         email: email,
@@ -90,7 +90,7 @@ console.log(userinfo)
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        "Authorization": `Basic ${btoa("junaid:2002")}`,
+        "Authorization": `Basic ${btoa("5c7a5c961a:879bfd9e0ea")}`,
       },
       body: JSON.stringify({
         email: email,
@@ -108,7 +108,7 @@ console.log(userinfo)
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        "Authorization": `Basic ${btoa("junaid:2002")}`,
+        "Authorization": `Basic ${btoa("5c7a5c961a:879bfd9e0ea")}`,
       },
       body: JSON.stringify({
         email: userinfo.email,
@@ -129,7 +129,7 @@ console.log(userinfo)
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        "Authorization": `Basic ${btoa("junaid:2002")}`,
+        "Authorization": `Basic ${btoa("5c7a5c961a:879bfd9e0ea")}`,
       },
       body: JSON.stringify({
         email: userinfo.email,
@@ -149,7 +149,7 @@ console.log(userinfo)
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        "Authorization": `Basic ${btoa("junaid:2002")}`,
+        "Authorization": `Basic ${btoa("5c7a5c961a:879bfd9e0ea")}`,
       },
       body: JSON.stringify({
         email: userinfo.email,
